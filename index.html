@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/92064f7d65.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="navbar">
@@ -18,8 +20,10 @@
     <div class="container">
         <h1>Stian</h1>
         <img src="/img/stian 1.jpg" alt="Placeholder Image 1">
-        <img src="/img/stian 2.jpg" alt="Placeholder Image 1">
-        <img src="/img/stian 3.jpg" alt="Placeholder Image 1">
+        <p>Dette er Stian</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <img src="/img/stian 2.jpg" alt="Placeholder Image 2">
+        <img src="/img/stian 3.jpg" alt="Placeholder Image 3">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <div class="social-links">
             <a href="#">Facebook</a>
@@ -27,6 +31,43 @@
             <a href="#">Instagram</a>
             <a href="https://www.snapchat.com/add/stianjr?share_id=0ZyhiPYNybQ&locale=nb-NO"><i class="fab fa-snapchat"></i></a>
         </div>
+
+<!-- Bootstrap Carousel -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="carousel-text carousel-item-1">
+                <h3>Headline 1</h3>
+                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>From: Reviewer 1</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-text carousel-item-2">
+                <h3>Headline 2</h3>
+                <p>The review for the second slide.</p>
+                <p>From: Reviewer 2</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-text carousel-item-3">
+                <h3>Headline 3</h3>
+                <p>The review for the third slide.</p>
+                <p>From: Reviewer 3</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+        
         <div class="contact-form">
             <h2>Contact</h2>
             <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
@@ -42,5 +83,10 @@
     <div class="footer">
         <p>&copy; 2024 Stian. All rights reserved.</p>
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

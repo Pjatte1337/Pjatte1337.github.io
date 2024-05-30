@@ -1,22 +1,23 @@
+/* Body styles */
 body {
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
-    background-color: #d3c4c4;
+    background-color: #f5f5f5; /* Light gray background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure the body covers the full viewport height */
 }
 
+/* Container styles */
 .container {
+    flex: 1; /* Expand the container to fill remaining vertical space */
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
 
-img {
-    max-width: 100%;
-    height: 250px; /* Set a specific height for the images */
-    margin-bottom: 20px;
-}
-
+/* Social links styles */
 .social-links {
     margin-top: 20px;
 }
@@ -25,6 +26,7 @@ img {
     margin: 0 10px;
 }
 
+/* Contact form styles */
 .contact-form {
     margin-top: 20px;
 }
@@ -38,13 +40,13 @@ img {
 
 .contact-form button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #ff6f61; /* Warm red color */
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
-/* Additional styles for navbar */
+/* Navbar styles */
 .navbar {
     background-color: #333;
     overflow: hidden;
@@ -66,15 +68,12 @@ img {
     color: black;
 }
 
-/* Additional styles for footer */
+/* Footer styles */
 .footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
 }
 
@@ -101,13 +100,48 @@ img {
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
     .container img {
-        width: 45%; /* Adjust image width for smaller screens */
+        width: 50%; /* Adjust image width for smaller screens */
     }
 }
 
 @media screen and (max-width: 576px) {
     .container img {
-        width: 100%; /* Adjust image width for even smaller screens */
+        width: 95%; /* Adjust image width for even smaller screens */
         margin-right: 0; /* Remove right margin for smaller screens */
     }
+}
+
+/* CSS for the Bootstrap Carousel */
+.carousel {
+    margin-top: 20px; /* Adjust the top margin */
+}
+
+.carousel-text.carousel-item-1 {
+    background-color: rgba(255, 111, 97, 0.7); /* Warm red background for first item with 70% opacity */
+}
+
+.carousel-text.carousel-item-2 {
+    background-color: rgba(255, 209, 102, 0.7); /* Yellow background for second item with 70% opacity */
+}
+
+.carousel-text.carousel-item-3 {
+    background-color: rgba(6, 214, 160, 0.7); /* Green background for third item with 70% opacity */
+}
+
+
+/* You can add more styles for additional carousel items if needed */
+
+
+.carousel-text h3 {
+    font-size: 24px; /* Headline font size */
+    margin-bottom: 10px; /* Bottom margin for the headline */
+}
+
+.carousel-text p {
+    font-size: 16px; /* Review text font size */
+    margin-bottom: 5px; /* Bottom margin for the review text */
+}
+
+.carousel-text p:last-child {
+    margin-bottom: 0; /* Remove bottom margin for the last paragraph */
 }
