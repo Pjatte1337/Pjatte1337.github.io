@@ -1,10 +1,11 @@
 body {
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
+    background-color: #d3c4c4;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -12,7 +13,7 @@ body {
 
 img {
     max-width: 100%;
-    height: auto;
+    height: 250px; /* Set a specific height for the images */
     margin-bottom: 20px;
 }
 
@@ -75,4 +76,38 @@ img {
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+/* Yellow color for Snapchat icon */
+.social-links a i.fab.fa-snapchat {
+    color: yellow;
+}
+
+/* CSS for images */
+.container img {
+    display: inline-block; /* Display images inline */
+    width: 30%; /* Set width for each image */
+    margin-right: 10px; /* Space between images */
+    vertical-align: top; /* Align images to the top */
+}
+
+/* Clearfix to prevent collapsing margins */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .container img {
+        width: 45%; /* Adjust image width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container img {
+        width: 100%; /* Adjust image width for even smaller screens */
+        margin-right: 0; /* Remove right margin for smaller screens */
+    }
 }
