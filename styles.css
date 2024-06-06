@@ -1,298 +1,350 @@
 /*Generelt============================================================================================================*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(to bottom right, #aa3030, #000000); /* Gradient background */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    to bottom right,
+    #aa3030,
+    #000000
+  ); /* Gradient background */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container {
-    flex: 1; 
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+  flex: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
 
 .container img {
-    display: inline-block; /* Display images inline */
-    width: 30%; /* Set width for each image */
-    margin-right: 10px; /* Space between images */
-    vertical-align: top; /* Align images to the top */
+  display: inline-block; /* Display images inline */
+  width: 30%; /* Set width for each image */
+  margin-right: 10px; /* Space between images */
+  vertical-align: top; /* Align images to the top */
 }
 
 h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
-
-
-
 
 /*Sosialt============================================================================================================*/
 .social-links {
-    margin-top: 20px; /* Adjust the top margin */
-    margin-bottom: 20px; /* Adjust the bottom margin */
-    max-width: 600px; /* Set maximum width for the social links */
-    margin-left: auto; /* Center the social links horizontally */
-    margin-right: auto; /* Center the social links horizontally */
-    border: 1px solid #ccc; /* Add a border */
-    border-radius: 8px; /* Add border radius for rounded corners */
-    background-color: #e36767; /* Add a light gray background color */
-    padding: 20px; /* Add padding */
-    display: flex; /* Use flexbox to align items */
-    justify-content: space-around; /* Spread items evenly */
-    align-items: center; /* Center items vertically */
+  margin-top: 20px; /* Adjust the top margin */
+  margin-bottom: 20px; /* Adjust the bottom margin */
+  max-width: 600px; /* Set maximum width for the social links */
+  margin-left: auto; /* Center the social links horizontally */
+  margin-right: auto; /* Center the social links horizontally */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  background-color: #e36767; /* Add a light gray background color */
+  padding: 20px; /* Add padding */
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-around; /* Spread items evenly */
+  align-items: center; /* Center items vertically */
 }
 
 .social-links a {
-    color: inherit; /* Set the color to inherit from the parent element */
-    text-decoration: none; /* Remove underline */
+  color: inherit; /* Set the color to inherit from the parent element */
+  text-decoration: none; /* Remove underline */
 }
 
 .social-links a i {
-    font-size: 24px; /* Icon size */
+  font-size: 24px; /* Icon size */
 }
 
 .social-links a i.fab.fa-facebook {
-    color: blue;
+  color: blue;
 }
 
 .social-links a i.fab.fa-instagram {
-    color: red;
+  color: red;
 }
 
 .social-links a i.fab.fa-snapchat {
-    color: yellow;
+  color: yellow;
 }
-
-
-
-
-
 
 /*kontaktskjema============================================================================================================*/
 .contact-form {
-    margin-top: 20px; /* Adjust the top margin */
-    margin-bottom: 20px; /* Adjust the bottom margin */
-    max-width: 600px; /* Set maximum width for the contact form */
-    margin-left: auto; /* Center the contact form horizontally */
-    margin-right: auto; /* Center the contact form horizontally */
-    border: 1px solid #ccc; /* Add a border */
-    border-radius: 8px; /* Add border radius for rounded corners */
-    background-color: #f9f9f9; /* Add a light gray background color */
-    padding: 20px; /* Add padding */
+  margin-top: 20px; /* Adjust the top margin */
+  margin-bottom: 20px; /* Adjust the bottom margin */
+  max-width: 600px; /* Set maximum width for the contact form */
+  margin-left: auto; /* Center the contact form horizontally */
+  margin-right: auto; /* Center the contact form horizontally */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  background-color: #f9f9f9; /* Add a light gray background color */
+  padding: 20px; /* Add padding */
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc; /* Add border for input fields */
-    border-radius: 4px; /* Add border radius for rounded corners */
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* Add border for input fields */
+  border-radius: 4px; /* Add border radius for rounded corners */
 }
 
 .contact-form button {
-    padding: 10px 20px;
-    background-color: #ff6f61; /* Warm red color */
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px; /* Add border radius for rounded corners */
-    transition: background-color 0.3s ease; /* Add smooth transition for background color change */
+  padding: 10px 20px;
+  background-color: #ff6f61; /* Warm red color */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px; /* Add border radius for rounded corners */
+  transition: background-color 0.3s ease; /* Add smooth transition for background color change */
 }
 
 .contact-form button:hover {
-    background-color: #ff5246; /* Darker shade of red on hover */
+  background-color: #ff5246; /* Darker shade of red on hover */
 }
-
-
-
-
 
 /*Footer============================================================================================================*/
 .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
 }
-
-
-
-
 
 /*Navbar============================================================================================================*/
 .navbar {
-    background-color: #333;
-    overflow: hidden;
-    padding: 0 20px; /* Add padding to the navbar */
-    height: 60px; /* Set the height of the navbar */
+  background-color: #333;
+  overflow: hidden;
+  padding: 0 20px; /* Add padding to the navbar */
+  height: 60px; /* Set the height of the navbar */
 }
 
 .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    margin-left: auto; /* Move the ul to the right */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  margin-left: auto; /* Move the ul to the right */
 }
 
 .navbar li {
-    margin-right: 20px; /* Adjust spacing between menu items */
+  margin-right: 20px; /* Adjust spacing between menu items */
 }
 
 .navbar a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease; /* Add smooth transition for color change */
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Add smooth transition for color change */
 }
 
 .navbar a:hover {
-    color: #ddd; /* Change color on hover */
+  color: #ddd; /* Change color on hover */
 }
 
 .burger-menu {
-    display: none; /* Hide the burger menu initially */
+  display: none; /* Hide the burger menu initially */
 }
-
-
-
-
 
 /*Media query============================================================================================================*/
 .carousel {
-    margin-top: 20px; /* Adjust the top margin */
-    margin-bottom: 20px; /* Adjust the bottom margin */
-    max-width: 600px; /* Set maximum width for the carousel */
-    margin-left: auto; /* Center the carousel horizontally */
-    margin-right: auto; /* Center the carousel horizontally */
-    border: 1px solid #ccc; /* Add a border */
-    border-radius: 8px; /* Add border radius for rounded corners */
-    overflow: hidden; /* Hide overflow content */
+  margin-top: 20px; /* Adjust the top margin */
+  margin-bottom: 20px; /* Adjust the bottom margin */
+  max-width: 600px; /* Set maximum width for the carousel */
+  margin-left: auto; /* Center the carousel horizontally */
+  margin-right: auto; /* Center the carousel horizontally */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  overflow: hidden; /* Hide overflow content */
 }
 
 .carousel-text {
-    background-color: rgba(255, 111, 97, 0.7); /* Warm red background with 70% opacity */
-    padding: 20px; /* Add padding */
-    height: 200px; /* Set a fixed height for the carousel text */
-    display: flex; /* Use flexbox to vertically center content */
-    flex-direction: column; /* Align content in a column */
-    justify-content: center; /* Vertically center content */
+  background-color: rgba(
+    255,
+    111,
+    97,
+    0.7
+  ); /* Warm red background with 70% opacity */
+  padding: 20px; /* Add padding */
+  height: 200px; /* Set a fixed height for the carousel text */
+  display: flex; /* Use flexbox to vertically center content */
+  flex-direction: column; /* Align content in a column */
+  justify-content: center; /* Vertically center content */
 }
 
 .carousel-text h3 {
-    font-size: 24px; /* Headline font size */
-    margin-bottom: 10px; /* Bottom margin for the headline */
+  font-size: 24px; /* Headline font size */
+  margin-bottom: 10px; /* Bottom margin for the headline */
 }
 
 .carousel-text p {
-    font-size: 16px; /* Review text font size */
-    margin-bottom: 5px; /* Bottom margin for the review text */
+  font-size: 16px; /* Review text font size */
+  margin-bottom: 5px; /* Bottom margin for the review text */
 }
 
 .carousel-text p:last-child {
-    margin-bottom: 0; /* Remove bottom margin for the last paragraph */
+  margin-bottom: 0; /* Remove bottom margin for the last paragraph */
 }
-
-
-
-
-
-
-
 
 /*Media query============================================================================================================*/
 @media screen and (max-width: 768px) {
-    /* Burger menu styles */
-    .burger-menu {
-        display: flex; /* Show the burger menu on smaller screens */
-        justify-content: flex-end; /* Align the hamburger menu to the right */
-        position: absolute; /* Position the hamburger menu relative to the navbar */
-        top: 25%; /* Align the top of the hamburger menu with the navbar */
-        right: 20px; /* Add some space to the right */
-        color: white;
-        font-size: 24px;
-        z-index: 1000; /* Ensure the hamburger menu is above other elements */
-    }
+  /* Burger menu styles */
+  .burger-menu {
+    display: flex; /* Show the burger menu on smaller screens */
+    justify-content: flex-end; /* Align the hamburger menu to the right */
+    position: absolute; /* Position the hamburger menu relative to the navbar */
+    top: 25%; /* Align the top of the hamburger menu with the navbar */
+    right: 20px; /* Add some space to the right */
+    color: white;
+    font-size: 24px;
+    z-index: 1000; /* Ensure the hamburger menu is above other elements */
+  }
 
-    #menu {
-        display: none; /* Hide the menu by default on smaller screens */
-        position: fixed;
-        top: 60px; /* Adjust top position based on your design */
-        left: 0;
-        right: 0;
-        background-color: rgba(51, 51, 51, 0.8); /* Make the menu background more transparent */
-        padding: 10px 0;
-        z-index: 999; /* Ensure the menu is below the hamburger menu */
-        flex-direction: column; /* Stack menu items vertically */
-        align-items: center; /* Center menu items */
-    }
+  #menu {
+    display: none; /* Hide the menu by default on smaller screens */
+    position: fixed;
+    top: 60px; /* Adjust top position based on your design */
+    left: 0;
+    right: 0;
+    background-color: rgba(
+      51,
+      51,
+      51,
+      0.8
+    ); /* Make the menu background more transparent */
+    padding: 10px 0;
+    z-index: 999; /* Ensure the menu is below the hamburger menu */
+    flex-direction: column; /* Stack menu items vertically */
+    align-items: center; /* Center menu items */
+  }
 
-    #menu li {
-        margin: 10px 0; /* Adjust spacing between menu items */
-    }
+  #menu li {
+    margin: 10px 0; /* Adjust spacing between menu items */
+  }
 
-    /* Show menu when hamburger menu is clicked */
-    #navbar-toggle:checked + #menu {
-        display: flex;
-    }
+  /* Show menu when hamburger menu is clicked */
+  #navbar-toggle:checked + #menu {
+    display: flex;
+  }
 
-    /* Adjustments for the entire page */
+  /* Adjustments for the entire page */
 
-    /* Example adjustments for the container */
-    .container {
-        max-width: 90%; /* Adjust maximum width */
-        padding: 10px; /* Adjust padding */
-    }
+  /* Example adjustments for the container */
+  .container {
+    max-width: 90%; /* Adjust maximum width */
+    padding: 10px; /* Adjust padding */
+  }
 
-    /* Example adjustments for images */
-    .container img {
-        width: 100%; /* Make images fill the container */
-        margin-right: 0; /* Remove right margin */
-    }
+  /* Example adjustments for images */
+  .container img {
+    width: 100%; /* Make images fill the container */
+    margin-right: 0; /* Remove right margin */
+  }
 
-    /* Example adjustments for headings */
-    h1 {
-        font-size: 24px; /* Decrease font size */
-    }
+  /* Example adjustments for headings */
+  h1 {
+    font-size: 24px; /* Decrease font size */
+  }
 
-    /* Example adjustments for paragraphs */
-    p {
-        font-size: 14px; /* Decrease font size */
-    }
+  /* Example adjustments for paragraphs */
+  p {
+    font-size: 14px; /* Decrease font size */
+  }
 
-    /* Example adjustments for the navbar */
-    .navbar ul {
-        justify-content: center; /* Center menu items */
-    }
+  /* Example adjustments for the navbar */
+  .navbar ul {
+    justify-content: center; /* Center menu items */
+  }
 
-    /* Example adjustments for the footer */
-    .footer {
-        padding: 5px 0; /* Adjust padding */
-    }
+  /* Example adjustments for the footer */
+  .footer {
+    padding: 5px 0; /* Adjust padding */
+  }
 
-    /* Add more adjustments as needed for other elements */
+  /* Add more adjustments as needed for other elements */
+}
+
+.carousel-text {
+  padding: 20px;
+  height: 300px; /* Set a fixed height for all slides */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.carousel-text.carousel-item-1 {
+  background-color: rgba(
+    255,
+    111,
+    97,
+    0.7
+  ); /* Warm red background for first item */
+}
+
+.carousel-text.carousel-item-2 {
+  background-color: rgba(
+    255,
+    209,
+    102,
+    0.7
+  ); /* Yellow background for second item */
+}
+
+.carousel-text.carousel-item-3 {
+  background-color: rgba(
+    6,
+    214,
+    160,
+    0.7
+  ); /* Green background for third item */
+}
+
+#carouselExampleControls2 .carousel-item {
+  height: 600px; /* Set the same height for all slides */
+}
+
+#carouselExampleControls2 .carousel-item img {
+  height: 100%;
+  object-fit: cover; /* Cover the container maintaining aspect ratio */
+  width: 100%;
+}
+
+.top-10-list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.top-10-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top-10-list ol {
+  padding-left: 40px;
+  list-style-type: decimal;
+}
+
+.top-10-list li {
+  margin-bottom: 10px;
+  font-size: 18px;
 }
