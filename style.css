@@ -68,6 +68,8 @@
     vertical-align: top; 
   }
 
+  
+
   h1 {
     margin-bottom: 20px;
     color: #ddd;
@@ -379,12 +381,12 @@
   
     /* Example adjustments for headings */
     h1 {
-      font-size: 24px; /* Decrease font size */
+      font-size: 28px; /* Decrease font size */
     }
   
     /* Example adjustments for paragraphs */
     p {
-      font-size: 14px; /* Decrease font size */
+      font-size: 18px; /* Decrease font size */
     }
   
     /* Example adjustments for the navbar */
