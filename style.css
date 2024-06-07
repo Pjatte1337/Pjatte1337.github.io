@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #333 !important; /* Sett bakgrunnsfargen til svart */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Comic Neue', cursive; /* Bruk Comic Neue font */
+
+  }
+
+
+  h1, p, .contact-form input, .contact-form textarea, .contact-form button, .top-10-list h3 {
+    font-family: 'Comic Neue', cursive; /* Bruk Comic Neue font */
+  }
+
+
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: 0 20px; 
+    height: 60px; 
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto; 
+  }
+  
+  .navbar li {
+    margin-right: 20px; 
+  }
+  
+  .navbar a {
+    color: #ddd ;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .burger-menu {
+    display: none; 
+  }
+  
+  .container {
+    flex: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container img {
+    display: inline-block; 
+    width: 30%; 
+    margin-right: 10px; 
+    vertical-align: top; 
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    color: #ddd;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    color: #ddd;
+  }
+
+  .social-links {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    max-width: 1000px; 
+    margin-left: auto; /* Center the social links horizontally */
+    margin-right: auto; /* Center the social links horizontally */
+    border: 3px solid #ccc; /* Add a border */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    background-color: #333;
+    padding: 20px; /* Add padding */
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-around; /* Spread items evenly */
+    align-items: center; /* Center items vertically */
+  }
+
+  .social-links a {
+    color: inherit; /* Set the color to inherit from the parent element */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .social-links a i {
+    font-size: 24px; /* Icon size */
+  }
+  
+  .social-links a i.fab.fa-facebook {
+    color: blue;
+  }
+  
+  .social-links a i.fab.fa-instagram {
+    color: red;
+  }
+  
+  .social-links a i.fab.fa-snapchat {
+    color: yellow;
+  }
+
+
+  /* Carousel ============================================================================================================ */
+.carousel {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    width: 345px; 
+    height: 200px;
+    margin-left: auto; 
+    margin-right: auto; 
+    border: 3px solid #ddd;
+    border-radius: 8px; 
+    overflow: hidden; 
+  }
+  
+  .carousel-text {
+    background-color: #333; 
+    padding: 20px; 
+    height: 200px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .carousel-text .c-text {
+    font-size: 16px; 
+    margin-bottom: auto; 
+    margin-top: 25px;
+    text-align: center; 
+  }
+  
+  .carousel-text .c-who {
+    font-size: 16px;
+    margin-bottom: auto;
+    margin-top: 25px; 
+    text-align: center; 
+  }
+  
+  .carousel-text p {
+    font-size: 16px; 
+    margin-bottom: 5px; 
+    text-align: center; 
+  }
+  
+  
+  #carouselExampleControls2 {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    width: 85%; 
+    height: 325px;
+  }
+  
+  .carousel-item img {
+    max-height: 400px; 
+    object-fit: cover; 
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: auto; 
+    color: #ddd; 
+    opacity: 0.5; /
+  }
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    color: #ddd; 
+    opacity: 0.9; 
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px; 
+    height: 30px; 
+  }
+  
+  .carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 8 8"><path d="M6.293 0.293a1 1 0 0 1 1.414 1.414L3.414 4l4.293 4.293a1 1 0 1 1-1.414 1.414l-5-5a1 1 0 0 1 0-1.414l5-5zM0 3h7v2H0z"/></svg>');
+  }
+  
+  .carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 8 8"><path d="M1.707 0.293a1 1 0 0 1 1.414 1.414L4.586 4 1.707 6.879a1 1 0 1 1-1.414-1.414l5-5a1 1 0 0 1 0 1.414l-5 5z"/></svg>');
+  }
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    opacity: 0.9; 
+  }
+
+
+  .top-10-list {
+    text-align: center; /* Center-align the content */
+  }
+  
+  .top-10-list h3 {
+    margin-bottom: 20px; /* Add some bottom margin to the heading */
+    color: #ddd;
+  }
+  
+  .top-10-list p {
+    margin-bottom: 10px; /* Add some bottom margin to each paragraph */
+  }
+  
+  .fa-solid.fa-check {
+    color: green; /* Change the color of the check icon */
+  }
+  
+  .contact-form {
+    width: 85%;
+    margin-top: 20px; 
+    margin-bottom: 20px; /* Adjust the bottom margin */
+    max-width: 600px; /* Set maximum width for the contact form */
+    margin-left: auto; /* Center the contact form horizontally */
+    margin-right: auto; /* Center the contact form horizontally */
+    border: 3px solid #ddd;
+    border-radius: 8px; /* Add border radius for rounded corners */
+    background-color: #333; /* Add a light gray background color */
+    padding: 20px; /* Add padding */
+  }
+
+  .contact-form h2{
+    color: #ddd;
+    font-size: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    
+    background-color: rgba(255, 255, 255, 0.1); /* Gjør bakgrunnsfargen mer gjennomsiktig */
+    color: white; /* Endre teksten til hvit for bedre synlighet */
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #ddd; /* Gjør placeholder-teksten mer gjennomsiktig */
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #555; /* Warm red color */
+    color: #ddd;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px; /* Add border radius for rounded corners */
+  }
+  
+  .contact-form button:hover {
+    background-color: #ddd; /* Darker shade of red on hover */
+    color: #555;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Burger menu styles */
+    .burger-menu {
+      display: flex; /* Show the burger menu on smaller screens */
+      justify-content: flex-end; /* Align the hamburger menu to the right */
+      position: absolute; /* Position the hamburger menu relative to the navbar */
+      top: 25%; /* Align the top of the hamburger menu with the navbar */
+      right: 20px; /* Add some space to the right */
+      color: white;
+      font-size: 24px;
+      z-index: 1000; /* Ensure the hamburger menu is above other elements */
+    }
+  
+    #menu {
+      display: none; /* Hide the menu by default on smaller screens */
+      position: fixed;
+      top: 60px; /* Adjust top position based on your design */
+      left: 0;
+      right: 0;
+      background-color: rgba(51, 51, 51, 0.8); /* Make the menu background more transparent */
+      padding: 10px 0;
+      z-index: 999; /* Ensure the menu is below the hamburger menu */
+      flex-direction: column; /* Stack menu items vertically */
+      align-items: center; /* Center menu items */
+    }
+  
+    #menu li {
+      margin: 10px 0; /* Adjust spacing between menu items */
+    }
+  
+    /* Show menu when hamburger menu is clicked */
+    #navbar-toggle:checked + #menu {
+      display: flex;
+    }
+  
+    /* Adjustments for the entire page */
+  
+    /* Example adjustments for the container */
+    .container {
+      max-width: 90%; /* Adjust maximum width */
+      padding: 10px; /* Adjust padding */
+    }
+  
+    /* Example adjustments for images */
+    .container img {
+      width: 100%; /* Make images fill the container */
+      margin-right: 0; /* Remove right margin */
+    }
+  
+    /* Example adjustments for headings */
+    h1 {
+      font-size: 24px; /* Decrease font size */
+    }
+  
+    /* Example adjustments for paragraphs */
+    p {
+      font-size: 14px; /* Decrease font size */
+    }
+  
+    /* Example adjustments for the navbar */
+    .navbar ul {
+      justify-content: center; /* Center menu items */
+    }
+  
+    /* Example adjustments for the footer */
+    .footer {
+      padding: 5px 0; /* Adjust padding */
+    }
+  
+    /* Add more adjustments as needed for other elements */
+  }
+  
